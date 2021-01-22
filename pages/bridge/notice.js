@@ -11,6 +11,19 @@ function Notice() {
       <style jsx>
         {`
           div {
+            text-align: center;
+            font-size: 1rem;
+            line-height: 25px;
+          }
+
+          .warning {
+            color: red;
+            font-size: 1.25rem;
+            margin: 1rem 0;
+          }        
+
+        @media screen and (min-width: 1024px) {
+          div {
             margin: 20px 200px;
             align-items: center;
             justify-content: center;
@@ -23,6 +36,7 @@ function Notice() {
             color: red;
             font-size: 24px;
           }
+        }
         `}
       </style>
     </div>

@@ -39,6 +39,102 @@ export default function Bridge() {
 
       <style jsx>
         {`
+        .bridge_container {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .bridge_box {
+          align-items: center;
+          justify-content: center;
+
+          list-style-type: none;
+          font-family: NotoSansCJKkr;
+          font-size: 25px;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+        }
+        select {
+          width: 150px;
+          height: 30px;
+          margin: 0 0 0 10px;
+          padding: 6px 20px 8px;
+          border-radius: 8px;
+          background-color: #30465c;
+          color: white;
+        }
+
+        .bridge_from {
+          padding: 30px;
+          width: 300px;
+        }
+
+        .bridge_from_info1 {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+
+        .bridge_from_info2 p {
+          font-size: 1rem;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          margin: 0;
+          text-align: right;
+        }
+
+        .bridge_arrow {
+          display: flex;
+          justify-content: center;
+          height: 50px;
+          transform: rotate(0.25turn);
+        }
+
+        .bridge_to {
+          padding: 30px;
+          width: 300px;
+        }
+
+        .bridge_to_info1 {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+
+        .bridge_to_info2 p {
+          font-size: 1rem;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          margin: 0;
+          text-align: right;
+        }
+
+        .input {
+          width: 100%;
+          padding: 12px 15px;
+          margin: 8px 0;
+          border-radius: 8px;
+          border: none;
+          background-color: #e6e6e6;
+          font-family: NotoSansCJKkr;
+          font-size: 12px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.5;
+          letter-spacing: normal;
+          text-align: left;
+          color: #7f7f7f;
+        }
+
+        * {
+          box-sizing: border-box;
+        }
+
+        @media screen and (min-width: 1024px) {
           .bridge_container {
             display: flex;
             align-items: center;
@@ -131,7 +227,7 @@ export default function Bridge() {
           * {
             box-sizing: border-box;
           }
-         
+        }
         `}
       </style>
     </div>

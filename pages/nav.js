@@ -7,7 +7,7 @@ export default function Nav() {
             <div className="nav_logo">
                 <Link href="/">
                     <a>
-                        <Image src="/bitsonic_logo.jpg" width={204} height={60} className="img_logo" />
+                        <img src="/bitsonic_logo.jpg" className="img_logo"></img>
                     </a>
                 </Link>
             </div>
@@ -44,9 +44,7 @@ export default function Nav() {
                     </a>
                 </li>
             </ul>
-            <a href="#" id="pull">Menu</a>
             <style jsx>{`
-            @media (min-width:1024px) {
                 .nav {
                     display: flex;
                     align-items: center;
@@ -61,6 +59,10 @@ export default function Nav() {
                     margin: 0; 
                     padding: 0; 
                     list-style-type: none;
+                }
+                .img_logo {
+                    width: 170px;
+                    height: 50px;
                 }
                 .nav_item {
                     height: max;
@@ -99,33 +101,6 @@ export default function Nav() {
                 button:focus { 
                     outline: none; 
                 }
-            }
-            
-            @media (max-width: 1024px) {
-              .nav {
-                border-bottom: 0;
-              }
-              .nav ul {
-                display: none;
-                height: auto;
-              }
-              .nav a#pull {
-                display: block;
-                background-color: #283744;
-                width: 100%;
-                position: relative;
-              }
-              .nav a#pull:after {
-                content:"";
-                background: url('nav-icon.png') no-repeat;
-                width: 30px;
-                height: 30px;
-                display: inline-block;
-                position: absolute;
-                right: 15px;
-                top: 10px;
-              }
-            }
         `}</style>
         </nav>
     );
